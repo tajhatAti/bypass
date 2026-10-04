@@ -117,23 +117,23 @@ MANUAL_DZHQ_BOT: str = "@DZHQ_BypassBot"
 MANUAL_START_IMAGE_URL: str = "https://api.aniwallpaper.workers.dev/random?type=girl"
 
 # 👑 5. BOT OWNER ID:
-MANUAL_OWNER_ID: Union[int, str, None] = 7931847651
+MANUAL_OWNER_ID: Union[int, str, None] = 8768764605
 
 # ══════════════════════════════════════════════════════════════
 #  SYSTEM CONFIGURATION & CREDENTIALS
 # ══════════════════════════════════════════════════════════════
 DEVELOPER = "@LazyProvider"
 BRAND_NAME = "ProviderBotz"
-OFFICIAL_CHANNEL = "https://t.me/ProviderBotz"
-FSUB_CHANNEL = os.environ.get("FSUB_CHANNEL", "@ProviderBotz").strip()
+OFFICIAL_CHANNEL = "https://t.me/publicid33h"
+FSUB_CHANNEL = os.environ.get("FSUB_CHANNEL", "@publicid33h").strip()
 
 # Public Bot Credentials
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8678804822:AAFCdWKWojP0zhG4xjW4OOY6WDS45sZiU90").strip()
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "TheLinkzoBot").strip().lstrip("@")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8930407679:AAHNW6NyDFmqNgsGzEjTPz0m4msN4Vk0NHs").strip()
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "CNjellebot").strip().lstrip("@")
 
 # Owner ID Priority: MANUAL_OWNER_ID -> OWNER_ID (env var)
-_raw_owner = MANUAL_OWNER_ID if MANUAL_OWNER_ID is not None and str(MANUAL_OWNER_ID).strip() else os.environ.get("OWNER_ID", "7931847651").strip()
-OWNER_ID = int(_raw_owner) if str(_raw_owner).isdigit() else 7931847651
+_raw_owner = MANUAL_OWNER_ID if MANUAL_OWNER_ID is not None and str(MANUAL_OWNER_ID).strip() else os.environ.get("OWNER_ID", "8768764605").strip()
+OWNER_ID = int(_raw_owner) if str(_raw_owner).isdigit() else 8768764605
 
 # Start Message Image Priority: MANUAL_START_IMAGE_URL -> START_IMAGE_URL (env var)
 START_IMAGE_URL: str = (MANUAL_START_IMAGE_URL or os.environ.get("START_IMAGE_URL", "https://api.aniwallpaper.workers.dev/random?type=girl")).strip()
@@ -155,7 +155,7 @@ if os.path.exists(_session_file):
     except Exception:
         pass
 
-TELEGRAM_SESSION = _saved_session or os.environ.get("TELEGRAM_SESSION", "1BVtsOKUBu6Gnza3fNKPNtJBH5BJ7RzjYcKPoe-TWKSbbot8C5pmadR57ouNjRiU5hjMfYuf5t8mJqmc45OXycxeMegVrkel7owZMZ51qgh8KSIsEunMU1wwvsrYfnAVY8TtFYZvqVPvHHPyWHew0YAsHbAc6Ak0mRBt3u68s1T3Iug_weGzjsIA-Gi1ra6m0P_9TLxA6w3NZ6k9tEMedQFM_MddpQUHCNmIPc3BxQvcVZ1DoNzgb_ESQZ94kg9WNJlDURRbWb8AdUrk-Lwf2J8W2V5eRd021RWX4YftdtTF_cYr7OAPTWtRatqXSJ2HTj80TKltXNqz5UntFDSGAZpm8bJXDXLQ=").strip() or "1BVtsOIEBu03moBzbxTbtDzq_9Ob0HWSVGAgesXEpzanbRk_GwC02S5uMZ5WHcFGm10VbStJD4pDmXfrq4uXHLtdCVdHtizC6omlJL5E95GCzaYY4bwlnlBqmdKSp9X9Wh4IVV5ce0-roJBz2noQAGCGSJOlGmOK7lJHdQjjomt9aQA5svUE6MvPdU4ZU0mdi892pDPbk0YXq57oc8xHMv1fmuaGBILo5vBQ0lQzqHKTVEY9ky_7xKBDn5tnnSoo0aNexr8mxwMmfo-aTZ7nIACqu_avEWR15tt2LOqMvSjLXt5PBF3Th-zZtgeP8MwXsF_6vpVnLI2iPFAtT85QQE1Fotxw838w="
+TELEGRAM_SESSION = _saved_session or os.environ.get("TELEGRAM_SESSION", "1BVtsOKUBuxpbY3pw_TICi9wF-KxBMwhgH8qGB5NYX-ifR58q7SFg2PnY8BLHM27LFvTHpIat-zDoMmDya33xn8mNJ0YZ5K0Af3tnOrsK6cG-EyGrl35XMnFAYQAdv4POTyq1CXDftzo5yxk1IK_FvmT8ef7GLFCdMam6c7iBOVfVtEdR0ioRcVc9dibRhpM1E-ql0sL66VrR_-Q9lY7aTrr_LedwLOE2sCLnuVy-JPD9zg90p9HsypSji6J0-tdIqmbF7Q8Z_kgWuSgHDxgMvgXxNGOv8QC8YviT29oWPc4-biGk9Ldlf_SCuJ-GKygVWaX7mOjKcW34Abu4k1Sfrr213UsCtWA=").strip() or "1BVtsOKUBuxpbY3pw_TICi9wF-KxBMwhgH8qGB5NYX-ifR58q7SFg2PnY8BLHM27LFvTHpIat-zDoMmDya33xn8mNJ0YZ5K0Af3tnOrsK6cG-EyGrl35XMnFAYQAdv4POTyq1CXDftzo5yxk1IK_FvmT8ef7GLFCdMam6c7iBOVfVtEdR0ioRcVc9dibRhpM1E-ql0sL66VrR_-Q9lY7aTrr_LedwLOE2sCLnuVy-JPD9zg90p9HsypSji6J0-tdIqmbF7Q8Z_kgWuSgHDxgMvgXxNGOv8QC8YviT29oWPc4-biGk9Ldlf_SCuJ-GKygVWaX7mOjKcW34Abu4k1Sfrr213UsCtWA="
 
 # External Bypass Bots (Supports DZHQ Group/DM & Alex DM)
 DZHQ_BOT = (os.environ.get("DZHQ_BOT_USERNAME") or MANUAL_DZHQ_BOT or "@DZHQ_BypassBot").strip()
@@ -2394,7 +2394,7 @@ async def process_user_link(chat_id: int, user_id: int, target_url: str, reply_m
             await bot_api.send_message(chat_id, err_text, reply_markup=reply_markup, disable_web_page_preview=True)
 
 async def check_user_fsub(user_id: int) -> bool:
-    """Check if user has joined the official channel @ProviderBotz."""
+    """Check if user has joined the official channel @publicid33h."""
     if not FSUB_CHANNEL or not bot_api:
         return True
     try:
@@ -2739,7 +2739,7 @@ async def run_bot_polling():
                             f"{to_small_caps('this is the fastest and powerful auto link bypass bot ∆')}\n\n"
                             f"⚡ <b>{to_small_caps('providerbotz engine')}</b>\n"
                             f"{to_small_caps('send any supported shortener link below to bypass instantly.')}\n\n"
-                            f"📢 <b>{to_small_caps('official updates')}:</b> @ProviderBotz"
+                            f"📢 <b>{to_small_caps('official updates')}:</b> @publicid33h"
                         )
                         start_markup = get_start_buttons(user_id=user_id)
                         sent = False
@@ -3034,7 +3034,7 @@ async def run_bot_polling():
                                 f"{to_small_caps('this is the fastest and powerful auto link bypass bot ∆')}\n\n"
                                 f"⚡ <b>{to_small_caps('providerbotz engine')}</b>\n"
                                 f"{to_small_caps('send any supported shortener link below to bypass instantly.')}\n\n"
-                                f"📢 <b>{to_small_caps('official updates')}:</b> @ProviderBotz"
+                                f"📢 <b>{to_small_caps('official updates')}:</b> @publicid33h"
                             )
                             start_btns = get_start_buttons(user_id=user_id)
                             edit_res = await bot_api.edit_message_text(chat_id, msg_id, start_text, reply_markup=start_btns, disable_web_page_preview=True)
@@ -3043,7 +3043,7 @@ async def run_bot_polling():
                         else:
                             await bot_api.answer_callback_query(
                                 cq_id,
-                                text="❌ You haven't joined @ProviderBotz yet! Please join first.",
+                                text="❌ You haven't joined @publicid33h yet! Please join first.",
                                 show_alert=True
                             )
 
@@ -3053,7 +3053,7 @@ async def run_bot_polling():
                             f"{to_small_caps('this is the fastest and powerful auto link bypass bot ∆')}\n\n"
                             f"⚡ <b>{to_small_caps('providerbotz engine')}</b>\n"
                             f"{to_small_caps('send any supported shortener link below to bypass instantly.')}\n\n"
-                            f"📢 <b>{to_small_caps('official updates')}:</b> @ProviderBotz"
+                            f"📢 <b>{to_small_caps('official updates')}:</b> @publicid33h"
                         )
                         start_btns = get_start_buttons(user_id=user_id)
                         edit_res = await bot_api.edit_message_text(chat_id, msg_id, start_text, reply_markup=start_btns, disable_web_page_preview=True)
